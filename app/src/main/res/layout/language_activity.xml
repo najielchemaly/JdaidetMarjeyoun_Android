@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/lblMuni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="The municipalition of " />
+
+        <TextView
+            android:id="@+id/lblTitleEn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="JDEIDET MARJEYOUN" />
+
+        <TextView
+            android:id="@+id/lblTitleAr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="بلدية جديدة مرجعيون" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginRight="@dimen/app_margin"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btnArabic"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/appBlue"
+            android:text="عربي"
+            android:textSize="@dimen/text_medium"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/btnEnglish"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/appBlue"
+            android:text="English"
+            android:textSize="@dimen/text_small"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

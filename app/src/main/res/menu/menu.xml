@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+
+             <item
+                 android:id="@+id/btnOverView"
+                 android:icon="@mipmap/ic_launcher"
+                 android:title="Overview" />
+
+            <item
+                android:id="@+id/btnAccounts"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Accounts" />
+
+            <item
+                android:id="@+id/btnBills"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Bills" />
+
+            <item
+                android:id="@+id/btnTransfer"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Transfer" />
+
+            <item
+                android:id="@+id/btnTransactions"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Transactions" />
+
+             <item
+                android:id="@+id/btnScheduled"
+                 android:icon="@mipmap/ic_launcher"
+                android:title="Scheduled" />
+
+            <item
+                android:id="@+id/btnTrends"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Your Position" />
+
+             <item
+                android:id="@+id/btnProducts"
+                 android:icon="@mipmap/ic_launcher"
+                android:title="Products" />
+
+            <item
+                android:id="@+id/btnRewards"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Rewards" />
+
+            <item
+                android:id="@+id/btnPlanb"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Sarah's suggestions" />
+
+        <item
+            android:title="" />
+
+        </group>
+    </menu>

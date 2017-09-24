@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/appBlue</item>
+        <item name="colorPrimaryDark">@color/appBlue</item>
+        <item name="colorAccent">@color/appBlue</item>
+        <item name="android:actionButtonStyle">@style/myActionButtonStyle</item>
+        <item name="actionButtonStyle">@style/myActionButtonStyle</item>
+    </style>
+
+    <style name="myActionButtonStyle" parent="Widget.AppCompat.ActionButton">
+        <item name="android:minWidth">45dp</item>
+        <item name="android:maxWidth">45dp</item>
+        <item name="android:width">20dp</item>
+    </style>
+
+    <style name="blueAccent" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorAccent">@color/blue</item>
+    </style>
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">0sp</item><!-- text size in menu-->
+        <item name="android:listPreferredItemHeightSmall">0dp</item><!-- item size in menu-->
+    </style>
+
+
+</resources>

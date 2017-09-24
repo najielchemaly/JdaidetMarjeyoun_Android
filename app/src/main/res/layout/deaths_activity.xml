@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/appBlue"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/overlay"
+        android:layout_toEndOf="@+id/overlay">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_centerVertical="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/backarrow"
+            android:background="@android:color/transparent"
+            android:tint="@color/white"
+            android:padding="14dp"
+            android:layout_marginLeft="@dimen/app_margin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Deaths"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:id="@+id/lblTitle" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listDeaths"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:drawSelectorOnTop="true"
+        android:scrollbarStyle="outsideOverlay"
+        android:fastScrollEnabled="true"
+        android:overScrollMode="never"/>
+
+</LinearLayout>

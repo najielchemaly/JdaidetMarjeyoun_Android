@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Jdeidet Marjeyoun</string>
+    <string name="events">Activities</string>
+    <string name="Locations">Places to visit</string>
+    <string name="Bills">Fees</string>
+    <string name="Deaths">Deaths</string>
+    <string name="About">About us</string>
+    <string name="News">Latest news</string>
+</resources>

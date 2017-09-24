@@ -1,0 +1,321 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="250dp">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true" />
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/blueLight"
+        android:backgroundTint="@color/blueLight"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/viewBills"
+                app:cardElevation="8dp"
+                android:layout_marginBottom="@dimen/app_margin"
+                android:layout_marginTop="@dimen/app_margin"
+                android:backgroundTint="@color/white"
+                android:background="@color/white"
+                app:cardCornerRadius="10dp"
+                android:layout_width="90dp"
+                android:layout_height="90dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/btnBills"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:padding="25dp"
+                        android:src="@drawable/note"
+                        android:layout_marginBottom="@dimen/app_margin"
+                        android:background="@android:color/transparent"
+                        />
+
+                    <TextView
+                        android:id="@+id/lblFees"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="@string/Bills"
+                        android:textColor="@color/blue"
+                        android:textSize="15sp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/viewEvents"
+                app:cardElevation="8dp"
+                android:layout_marginLeft="@dimen/app_margin"
+                android:clickable="true"
+                android:layout_marginBottom="@dimen/app_margin"
+                android:layout_marginTop="@dimen/app_margin"
+                android:backgroundTint="@color/white"
+                android:background="@color/white"
+                app:cardCornerRadius="10dp"
+                android:layout_width="90dp"
+                android:layout_height="90dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/btnEvents"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/app_margin"
+                        android:src="@drawable/calendar"
+                        android:scaleType="centerCrop"
+                        android:padding="25dp"
+                        android:background="@android:color/transparent"
+                        />
+
+                    <TextView
+                        android:id="@+id/lblEvent"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="@string/events"
+                        android:textColor="@color/blue"
+                        android:textSize="15sp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/viewNews"
+                app:cardElevation="8dp"
+                android:layout_marginLeft="@dimen/app_margin"
+                android:clickable="true"
+                android:layout_marginBottom="@dimen/app_margin"
+                android:layout_marginTop="@dimen/app_margin"
+                android:backgroundTint="@color/white"
+                android:background="@color/white"
+                app:cardCornerRadius="10dp"
+                android:layout_width="90dp"
+                android:layout_height="90dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/btnNews"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/app_margin"
+                        android:src="@drawable/book"
+                        android:scaleType="centerCrop"
+                        android:padding="25dp"
+                        android:background="@android:color/transparent"
+                        />
+
+                    <TextView
+                        android:id="@+id/lblNews"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="@string/News"
+                        android:textColor="@color/blue"
+                        android:textSize="15sp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            >
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/viewSocials"
+                app:cardElevation="8dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:backgroundTint="@color/white"
+                android:background="@color/white"
+                android:layout_marginBottom="@dimen/app_margin"
+                android:layout_marginTop="@dimen/app_margin"
+                app:cardCornerRadius="10dp"
+                android:layout_width="90dp"
+                android:layout_height="90dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/btnSocials"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/socials"
+                        android:scaleType="centerCrop"
+                        android:padding="30dp"
+                        android:background="@android:color/transparent"
+                        android:layout_marginBottom="@dimen/app_margin"
+                        />
+
+                    <TextView
+                        android:id="@+id/lblDeaths"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="@string/Deaths"
+                        android:textColor="@color/blue"
+                        android:textSize="15sp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/viewAbout"
+                app:cardElevation="8dp"
+                android:backgroundTint="@color/white"
+                android:background="@color/white"
+                app:cardCornerRadius="10dp"
+                android:layout_width="90dp"
+                android:layout_height="90dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/btnAbout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/about"
+                        android:scaleType="centerCrop"
+                        android:padding="30dp"
+                        android:background="@android:color/transparent"
+                        android:layout_marginBottom="@dimen/app_margin"
+                        />
+
+                    <TextView
+                        android:id="@+id/lblAbout"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="@string/About"
+                        android:textColor="@color/blue"
+                        android:textSize="15sp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/viewLocation"
+                app:cardElevation="8dp"
+                android:backgroundTint="@color/white"
+                android:background="@color/white"
+                android:layout_marginBottom="@dimen/app_margin"
+                android:layout_marginTop="@dimen/app_margin"
+                android:layout_marginLeft="@dimen/app_margin"
+                app:cardCornerRadius="10dp"
+                android:layout_width="90dp"
+                android:layout_height="90dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/btnLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/location"
+                        android:tint="@color/blue"
+                        android:scaleType="centerCrop"
+                        android:padding="27dp"
+                        android:background="@android:color/transparent"
+                        android:layout_marginBottom="@dimen/app_margin"
+                        />
+
+                    <TextView
+                        android:id="@+id/lblLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="@string/Locations"
+                        android:textColor="@color/blue"
+                        android:textSize="15sp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

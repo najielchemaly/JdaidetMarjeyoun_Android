@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/viewFields"
+        android:layout_marginBottom="@dimen/app_margin"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="تسجيل الدخول"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_large" />
+
+        <TextView
+            android:id="@+id/lblSubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="يرجى ملئ النموذج أدناه لإستخدام التطبيق"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_medium" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewFields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="@dimen/app_margin"
+            android:layout_marginLeft="@dimen/app_margin"
+            android:layout_marginRight="@dimen/app_margin"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/imgUsername"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/profile"
+                android:scaleType="centerCrop"
+                android:padding="3dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/app_margin" />
+
+            <EditText
+                android:id="@+id/txtUsername"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/app_margin"
+                android:layout_marginRight="45dp"
+                android:imeOptions="actionDone"
+                android:inputType="textCapWords"
+                android:background="@android:color/transparent"
+                android:gravity="center|right"
+                android:hint="اسم المستخدم" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="@dimen/app_margin"
+            android:layout_marginLeft="@dimen/app_margin"
+            android:layout_marginRight="@dimen/app_margin"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/imgPassword"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/lock"
+                android:scaleType="centerCrop"
+                android:padding="3dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/app_margin" />
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/app_margin"
+                android:layout_marginRight="45dp"
+                android:background="@android:color/transparent"
+                android:gravity="center|right"
+                android:hint="كلمه السر"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="@dimen/app_margin"
+            android:layout_marginLeft="@dimen/app_margin"
+            android:layout_marginRight="@dimen/app_margin"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/imgPasswordConfirm"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/lock"
+                android:scaleType="centerCrop"
+                android:padding="3dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/app_margin" />
+
+            <EditText
+                android:id="@+id/txtPasswordConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/app_margin"
+                android:layout_marginRight="45dp"
+                android:background="@android:color/transparent"
+                android:gravity="center|right"
+                android:hint="تأكيد كلمة السر"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="@dimen/app_margin"
+            android:layout_marginLeft="@dimen/app_margin"
+            android:layout_marginRight="@dimen/app_margin"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/imgPhone"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/phone"
+                android:scaleType="centerCrop"
+                android:padding="3dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/app_margin" />
+
+            <EditText
+                android:id="@+id/txtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/app_margin"
+                android:layout_marginRight="45dp"
+                android:background="@android:color/transparent"
+                android:gravity="center|right"
+                android:hint="هاتف"
+                android:imeOptions="actionDone"
+                android:inputType="phone" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/app_margin"
+            android:layout_marginRight="@dimen/app_margin"
+            android:background="@color/appBlue"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_medium"
+            android:text="تسجيل الدخول" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/app_margin">
+
+        <TextView
+            android:id="@+id/lblSkip"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="bottom"
+            android:paddingRight="5dp"
+            android:clickable="true"
+            android:textColor="@color/black"
+            android:paddingLeft="5dp"
+            android:text="تخطي تسجيل الدخول" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@+id/lblSkip"
+            android:layout_alignRight="@+id/lblSkip"
+            android:layout_below="@+id/lblSkip"
+            android:background="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/viewAlert"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/app_margin"
+            android:gravity="center"
+            android:text="are you sure you want"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/app_margin"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="@dimen/app_margin"
+                android:layout_marginRight="@dimen/app_margin"
+                android:background="@color/appBlue"
+                android:text="confirm"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/app_margin"
+                android:layout_marginRight="@dimen/app_margin"
+                android:background="@color/white"
+                android:text="decline"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">جديدة مرجعيون</string>
+    <string name="events">النشاطات</string>
+    <string name="Locations">أماكن للزيارة</string>
+    <string name="Bills">رسوم البلدية</string>
+    <string name="Deaths">الوفيات</string>
+    <string name="About">عن البلدية</string>
+    <string name="News">آخر الأخبار</string>
+</resources>
