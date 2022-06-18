@@ -8,11 +8,24 @@
     >
 
     <TextView
-        android:id="@+id/txtNotification"
+        android:id="@+id/txtTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/app_margin"
-        android:text="asdasdas"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="@dimen/app_margin2"
+        android:layout_marginLeft="@dimen/app_margin2"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitle"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="@dimen/app_margin2"
+        android:layout_marginLeft="@dimen/app_margin2"
+        android:textColor="@color/blackLight"
         />
 
 </RelativeLayout>

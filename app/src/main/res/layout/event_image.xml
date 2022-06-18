@@ -7,7 +7,19 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:adjustViewBounds="true"
+        android:clickable="true"
         android:layout_gravity="center"
         android:src="@drawable/home_background"
         android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/lblDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="test test test"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        android:background="@color/blackOpacityImage"
+        />
 </FrameLayout>

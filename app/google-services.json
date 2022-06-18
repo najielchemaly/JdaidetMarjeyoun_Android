@@ -1,0 +1,167 @@
+{
+  "project_info": {
+    "project_number": "818640148205",
+    "firebase_url": "https://marjeyoun-180706.firebaseio.com",
+    "project_id": "marjeyoun-180706",
+    "storage_bucket": "marjeyoun-180706.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818640148205:android:71f546879b6ec6f3",
+        "android_client_info": {
+          "package_name": "com.marjeyoun.jdeidetmarjeyoun"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "818640148205-m52elt7p2olaon399627ds08rfqa817h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.marjeyoun.jdeidetmarjeyoun",
+            "certificate_hash": "8ea91a39ced55d92453e557e800b40842d5f51ef"
+          }
+        },
+        {
+          "client_id": "818640148205-a8jke6klf0onlc80o6qjpgbodp2l1e63.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArW8EzR8Y9X9WpRdzO9Hg1_68asPmnWlU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "818640148205-pf7u1luqfpvbghpqlmnji7r058b7j0q9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.municipality.marjeyoun",
+                "app_store_id": "1352726372"
+              }
+            },
+            {
+              "client_id": "818640148205-a8jke6klf0onlc80o6qjpgbodp2l1e63.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818640148205:android:542c129c3cbb069a",
+        "android_client_info": {
+          "package_name": "com.municipality.jdeidetmarjeyoun"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "818640148205-6f2nqn4aecjotkm86ar8lgmbigr1seg5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.municipality.jdeidetmarjeyoun",
+            "certificate_hash": "8ea91a39ced55d92453e557e800b40842d5f51ef"
+          }
+        },
+        {
+          "client_id": "818640148205-a8jke6klf0onlc80o6qjpgbodp2l1e63.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArW8EzR8Y9X9WpRdzO9Hg1_68asPmnWlU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "818640148205-pf7u1luqfpvbghpqlmnji7r058b7j0q9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.municipality.marjeyoun",
+                "app_store_id": "1352726372"
+              }
+            },
+            {
+              "client_id": "818640148205-a8jke6klf0onlc80o6qjpgbodp2l1e63.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818640148205:android:1b25d82a7b91e71a",
+        "android_client_info": {
+          "package_name": "com.municipality.marjeyoun"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "818640148205-l37t8bor4n0hk3sclv2sgrnsr1lluo93.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.municipality.marjeyoun",
+            "certificate_hash": "8ea91a39ced55d92453e557e800b40842d5f51ef"
+          }
+        },
+        {
+          "client_id": "818640148205-a8jke6klf0onlc80o6qjpgbodp2l1e63.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArW8EzR8Y9X9WpRdzO9Hg1_68asPmnWlU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "818640148205-pf7u1luqfpvbghpqlmnji7r058b7j0q9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.municipality.marjeyoun",
+                "app_store_id": "1352726372"
+              }
+            },
+            {
+              "client_id": "818640148205-a8jke6klf0onlc80o6qjpgbodp2l1e63.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -13,7 +13,7 @@
         android:id="@+id/action_complain"
         android:enabled="true"
         android:icon="@drawable/inbox"
-        android:title="الشكاوى"
+        android:title="اقتراحات"
         app:showAsAction="ifRoom" />
 
     <item
@@ -26,7 +26,7 @@
     <item
         android:id="@+id/action_contact"
         android:enabled="true"
-        android:icon="@drawable/profile_bar"
+        android:icon="@drawable/contact"
         android:title="الدليل"
         app:showAsAction="ifRoom" />
 

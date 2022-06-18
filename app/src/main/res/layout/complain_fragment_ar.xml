@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/txtFullName"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginRight="@dimen/app_margin"
+        android:paddingRight="@dimen/app_margin"
+        android:gravity="right|center"
+        android:lines="1"
+        android:inputType="textCapWords"
+        android:imeOptions="actionNext"
+        android:layout_marginTop="@dimen/app_margin"
+        android:background="@drawable/edit_text_border"
+        android:textCursorDrawable="@color/black"
+        android:hint="الإسم الثلاثي "
+        android:textSize="15sp"
+        />
+
+    <EditText
+        android:id="@+id/txtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginRight="@dimen/app_margin"
+        android:layout_marginTop="@dimen/app_margin"
+        android:gravity="right|center"
+        android:lines="1"
+        android:inputType="phone"
+        android:imeOptions="actionDone"
+        android:paddingRight="@dimen/app_margin"
+        android:background="@drawable/edit_text_border"
+        android:textCursorDrawable="@color/black"
+        android:hint="رقم الهاتف "
+        android:textSize="15sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/app_margin"
+        android:layout_marginRight="@dimen/app_margin"
+        android:layout_marginLeft="@dimen/app_margin">
+
+    <RelativeLayout
+        android:id="@+id/viewSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_text_border">
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/spinnerType"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:layout_margin="1dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:ms_background_color="@color/white" />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|right"
+        android:inputType="textMultiLine"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginRight="@dimen/app_margin"
+        android:hint="التفاصيل "
+        android:padding="10dp"
+        android:imeOptions="actionDone"
+        android:layout_marginTop="@dimen/app_margin"
+        android:background="@drawable/edit_text_border"
+        android:lines="8"
+        android:maxLines="10"
+        android:minLines="6"
+        android:scrollbars="vertical"
+        android:id="@+id/txtMessage"
+        android:textSize="15sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/black"
+        android:elevation="5dp"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginRight="@dimen/app_margin"
+        android:layout_marginTop="@dimen/app_margin"
+        >
+
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="@dimen/app_margin"
+            android:src="@drawable/upload"
+            android:scaleType="centerCrop"
+            android:tint="@color/white"
+            android:padding="12dp"
+            />
+
+        <TextView
+            android:id="@+id/lblUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:text="تحميل الملف "
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/app_margin"
+            android:textSize="15sp"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/blue"
+        android:text="ارسل "
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginRight="@dimen/app_margin"
+        android:layout_marginTop="@dimen/app_margin"
+        android:textSize="15sp"
+        />
+
+</LinearLayout>

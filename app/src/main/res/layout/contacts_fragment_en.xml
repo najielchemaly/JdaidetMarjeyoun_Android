@@ -1,94 +1,236 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.jaredrummler.materialspinner.MaterialSpinner
-        android:id="@+id/spinnerCategory"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="@dimen/app_margin"
-        android:layout_marginRight="@dimen/app_margin"
-        android:textColor="@color/black"
-        android:textSize="@dimen/text_medium"
-        app:ms_background_color="@color/white" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
+    <LinearLayout
+        android:id="@+id/viewHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/app_margin"
-        android:layout_marginLeft="@dimen/app_margin"
-        android:layout_marginRight="@dimen/app_margin"
-        android:background="@color/white"
-
+        android:padding="1dp"
+        android:background="@drawable/edit_text_border_blue"
+        android:gravity="center"
+        android:orientation="horizontal"
         >
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/search"
-            android:padding="3dp"
-            android:layout_centerVertical="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="@dimen/app_margin"
+        <Button
+            android:id="@+id/btnContacts"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:text="Phone Numbers"
             />
 
-        <EditText
-            android:id="@+id/txtPhone"
+        <Button
+            android:id="@+id/btnLinks"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:background="@color/white"
+            android:textColor="@color/blue"
+            android:text="Useful Links"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewHeader"
+        android:orientation="vertical"
+        >
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="@dimen/app_margin"
+            android:layout_marginRight="@dimen/app_margin"
+            android:background="@drawable/edit_text_border"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_medium"
+            app:ms_background_color="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/app_margin"
+            android:layout_marginLeft="@dimen/app_margin"
+            android:layout_marginRight="@dimen/app_margin"
+            android:background="@drawable/edit_text_border"
+
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/search"
+                android:padding="3dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/app_margin"
+                />
+
+            <EditText
+                android:id="@+id/txtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_medium"
+                android:layout_marginLeft="@dimen/app_margin"
+                android:layout_marginRight="50dp"
+                android:imeOptions="actionSearch"
+                android:inputType="textCapWords"
+                android:gravity="left|center"
+                android:background="@android:color/transparent"
+                android:hint="Find the directory number" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/app_margin"
+            android:layout_marginRight="@dimen/app_margin"
+            android:layout_marginTop="@dimen/app_margin"
+            android:background="@color/blue"
+            android:text="Search"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_medium" />
+
+        <LinearLayout
+            android:id="@+id/viewSearch"
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/app_margin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="@dimen/app_margin"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Full name"
+                    android:id="@+id/lblFullname" />
+
+                <TextView
+                    android:id="@+id/lblMobileNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="Mobile Number"
+                    />
+
+                <TextView
+                    android:id="@+id/lblPhoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listContacts"
+                ></ListView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/viewNoSearch"
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_centerVertical="true"
-            android:textSize="@dimen/text_medium"
-            android:layout_marginLeft="@dimen/app_margin"
-            android:layout_marginRight="50dp"
-            android:imeOptions="actionDone"
-            android:inputType="textCapWords"
-            android:gravity="left|center"
-            android:background="@android:color/transparent"
-            android:hint="Find the directory number" />
+            android:layout_marginTop="@dimen/app_margin">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/info"
+                    android:layout_marginBottom="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/lblMessage"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="No results found, /nPlease select a specific category (banks, schools, special numbers ...) or search by entering the desired name"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/viewLinks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/app_margin"
+        android:layout_below="@+id/viewHeader"
+        >
+
+        <ListView
+            android:id="@+id/listLinks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
 
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/comingSoonLayout"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_margin="@dimen/app_margin"
-        >
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/comingSoonImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/info"
+            android:scaleType="fitCenter" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:text="Full name"
-            android:id="@+id/lblFullname" />
-
-        <TextView
-            android:id="@+id/lblMobileNumber"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:text="Mobile Number"
-            />
-
-        <TextView
-            android:id="@+id/lblPhoneNumber"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Phone Number"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="40dp"
-            android:layout_toStartOf="@+id/lblMobileNumber" />
+            android:text="COMING SOON"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:textSize="24sp"
+            android:layout_below="@id/comingSoonImage"
+            android:layout_marginTop="50dp"/>
 
     </RelativeLayout>
 
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/listContacts"
-        ></ListView>
-
-</LinearLayout>
+</RelativeLayout>

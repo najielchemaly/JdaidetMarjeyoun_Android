@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Jdeidet Marjeyoun</string>
-    <string name="events">Activities</string>
-    <string name="Locations">Places to visit</string>
+    <string name="app_name">بلدية مرجعيون</string>
+    <string name="events">Events</string>
+    <string name="Locations">Places to Visit</string>
     <string name="Bills">Fees</string>
-    <string name="Deaths">Deaths</string>
-    <string name="About">About us</string>
-    <string name="News">Latest news</string>
+    <string name="Deaths">Socials</string>
+    <string name="About">About Us</string>
+    <string name="News">Latest News</string>
+    <string name="error_message">An error has occured, please try again</string>
+    <string name="loading_message">Loading. Please wait...</string>
+    <string name="home">Home</string>
+    <string name="fill_fields_error">Please fill all empty fields</string>
+    <string name="select_category">All categories</string>
+    <string name="error_username">Username field cannot be empty</string>
+    <string name="error_password">Password field cannot be empty</string>
+    <string name="error_phone">Phone number field cannot be empty</string>
+    <string name="error_passwords_confirmation">Passwords do not match</string>
+    <string name="error_email">Email field cannot be empty</string>
+    <string name="error_fullname">Fullname field cannot be empty</string>
+    <string name="links">Useful Links</string>
+    <string name="phone_numbers">Phone Numbers</string>
+    <string name="no_result">No result found.</string>
 </resources>

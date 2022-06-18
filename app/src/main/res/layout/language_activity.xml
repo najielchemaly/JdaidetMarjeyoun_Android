@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
+    android:background="@color/appBlue"
     android:orientation="vertical">
 
     <LinearLayout
@@ -22,15 +22,15 @@
             android:id="@+id/lblMuni"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
+            android:textColor="@color/blackLight"
             android:gravity="center"
-            android:text="The municipalition of " />
+            android:text="THE MUNICIPALITY OF" />
 
         <TextView
             android:id="@+id/lblTitleEn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:gravity="center"
             android:text="JDEIDET MARJEYOUN" />
 
@@ -38,7 +38,7 @@
             android:id="@+id/lblTitleAr"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:gravity="center"
             android:text="بلدية جديدة مرجعيون" />
     </LinearLayout>
@@ -55,8 +55,8 @@
             android:id="@+id/btnArabic"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:background="@color/appBlue"
-            android:text="عربي"
+            android:background="@color/blue"
+            android:text="العربية"
             android:textSize="@dimen/text_medium"
             android:layout_marginBottom="8dp"
             android:textColor="@color/white"
@@ -66,7 +66,7 @@
             android:id="@+id/btnEnglish"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:background="@color/appBlue"
+            android:background="@color/blue"
             android:text="English"
             android:textSize="@dimen/text_small"
             android:layout_marginBottom="8dp"

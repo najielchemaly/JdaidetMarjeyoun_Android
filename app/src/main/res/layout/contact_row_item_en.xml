@@ -31,8 +31,7 @@
             android:layout_height="wrap_content"
             android:text="Phone Number"
             android:layout_centerVertical="true"
-            android:layout_marginRight="40dp"
-            android:layout_toStartOf="@+id/lblMobileNumber" />
+            android:layout_centerHorizontal="true"/>
 
     </RelativeLayout>
 

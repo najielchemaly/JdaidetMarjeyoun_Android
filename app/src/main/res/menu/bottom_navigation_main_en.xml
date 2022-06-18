@@ -12,8 +12,8 @@
     <item
         android:id="@+id/action_contact"
         android:enabled="true"
-        android:icon="@drawable/profile_bar"
-        android:title="Contacts"
+        android:icon="@drawable/contact"
+        android:title="Directory"
         app:showAsAction="ifRoom" />
 
     <item
@@ -27,7 +27,7 @@
         android:id="@+id/action_complain"
         android:enabled="true"
         android:icon="@drawable/inbox"
-        android:title="Complain"
+        android:title="Complaints"
         app:showAsAction="ifRoom" />
 
     <item
@@ -36,7 +36,5 @@
         android:icon="@drawable/profile_bar"
         android:title="Profile"
         app:showAsAction="ifRoom" />
-
-
 
 </menu>

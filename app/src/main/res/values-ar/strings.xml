@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">جديدة مرجعيون</string>
+    <string name="app_name">بلدية مرجعيون</string>
     <string name="events">النشاطات</string>
     <string name="Locations">أماكن للزيارة</string>
     <string name="Bills">رسوم البلدية</string>
-    <string name="Deaths">الوفيات</string>
+    <string name="Deaths">اجتماعيات</string>
     <string name="About">عن البلدية</string>
     <string name="News">آخر الأخبار</string>
+    <string name="error_message">حدث خطأ، يرجى إعادة المحاولة</string>
+    <string name="loading_message">جار التحميل. أرجو الإنتظار...</string>
+    <string name="home">الصفحة الرئيسية</string>
+    <string name="fill_fields_error">رجاء إملأ كافة الحقول</string>
+    <string name="select_category">جميع الفآت</string>
+    <string name="error_username">لا يمكن أن يكون حقل اسم المستخدم فارغا</string>
+    <string name="error_password">لا يمكن أن يكون حقل كلمة المرور فارغا</string>
+    <string name="error_phone">لا يمكن أن يكون حقل رقم الهاتف فارغا</string>
+    <string name="error_passwords_confirmation">كلمة المرور غير مطابقة</string>
+    <string name="error_fullname">حقل الاسم الكامل لا يمكن أن يكون فارغا</string>
+    <string name="error_email">لا يمكن أن يكون حقل البريد الإلكتروني فارغا</string>
+    <string name="links">مواقع إلكترونية</string>
+    <string name="phone_numbers">أرقام هواتف</string>
+    <string name="no_result">لم يتم العثور على نتائج.</string>
 </resources>

@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue">
+    android:background="@color/appBlue">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,10 +17,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:text="تسجيل الدخول"
-            android:textStyle="bold"
+            android:text="إصنع حساب"
             android:textColor="@color/black"
-            android:textSize="@dimen/text_large" />
+            android:textSize="@dimen/text_large"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/lblSubTitle"
@@ -38,6 +38,40 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="@dimen/app_margin"
+            android:layout_marginLeft="@dimen/app_margin"
+            android:layout_marginRight="@dimen/app_margin"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/imgFullname"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/profile"
+                android:scaleType="centerCrop"
+                android:padding="3dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/app_margin" />
+
+            <EditText
+                android:id="@+id/txtFullname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/app_margin"
+                android:layout_marginRight="45dp"
+                android:imeOptions="actionDone"
+                android:inputType="textCapWords"
+                android:background="@android:color/transparent"
+                android:gravity="center|right"
+                android:hint="الإسم الكامل" />
+
+        </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -169,7 +203,7 @@
                 android:layout_marginRight="45dp"
                 android:background="@android:color/transparent"
                 android:gravity="center|right"
-                android:hint="هاتف"
+                android:hint="رقم الهاتف"
                 android:imeOptions="actionDone"
                 android:inputType="phone" />
 
@@ -181,10 +215,10 @@
             android:layout_height="45dp"
             android:layout_marginLeft="@dimen/app_margin"
             android:layout_marginRight="@dimen/app_margin"
-            android:background="@color/appBlue"
+            android:background="@color/blue"
+            android:text="تسجيل"
             android:textColor="@color/white"
-            android:textSize="@dimen/text_medium"
-            android:text="تسجيل الدخول" />
+            android:textSize="@dimen/text_medium" />
 
     </LinearLayout>
 
@@ -196,7 +230,7 @@
         android:layout_marginBottom="@dimen/app_margin">
 
         <TextView
-            android:id="@+id/lblSkip"
+            android:id="@+id/lblCancel"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:gravity="bottom"
@@ -204,38 +238,49 @@
             android:clickable="true"
             android:textColor="@color/black"
             android:paddingLeft="5dp"
-            android:text="تخطي تسجيل الدخول" />
+            android:text="إلغاء" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="1dp"
-            android:layout_alignLeft="@+id/lblSkip"
-            android:layout_alignRight="@+id/lblSkip"
-            android:layout_below="@+id/lblSkip"
+            android:layout_alignLeft="@+id/lblCancel"
+            android:layout_alignRight="@+id/lblCancel"
+            android:layout_below="@+id/lblCancel"
             android:background="@color/black" />
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/viewOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone"
+        android:background="@color/blackOpacity"
+        ></RelativeLayout>
+
+    <RelativeLayout
         android:id="@+id/viewAlert"
         android:layout_width="match_parent"
-        android:layout_height="180dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:background="@color/white"
+        android:padding="5dp"
         android:visibility="gone">
 
         <TextView
+            android:id="@+id/lblAlertTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/app_margin"
             android:gravity="center"
-            android:text="are you sure you want"
+            android:text="الرجاء تأكيد تسجيل الدخول"
             android:textColor="@color/black"
             android:textSize="18sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="@dimen/app_margin"
+            android:layout_below="@+id/lblAlertTitle"
             android:layout_marginTop="30dp"
             android:orientation="vertical">
 
@@ -246,8 +291,8 @@
                 android:layout_marginBottom="5dp"
                 android:layout_marginLeft="@dimen/app_margin"
                 android:layout_marginRight="@dimen/app_margin"
-                android:background="@color/appBlue"
-                android:text="confirm"
+                android:background="@color/blue"
+                android:text="تأكيد"
                 android:textColor="@color/white" />
 
             <Button
@@ -257,7 +302,8 @@
                 android:layout_marginLeft="@dimen/app_margin"
                 android:layout_marginRight="@dimen/app_margin"
                 android:background="@color/white"
-                android:text="decline"
+                android:text="إلغاء"
+                android:layout_marginBottom="5dp"
                 android:textColor="@color/black" />
 
         </LinearLayout>

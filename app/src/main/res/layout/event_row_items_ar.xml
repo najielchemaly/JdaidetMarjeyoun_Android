@@ -35,7 +35,8 @@
                 android:layout_marginRight="@dimen/app_margin"
                 android:layout_marginTop="@dimen/app_margin"
                 android:layout_marginLeft="@dimen/app_margin"
-                android:text="Title"
+                android:text=""
+                android:textColor="@color/black"
                 />
 
             <TextView
@@ -44,11 +45,11 @@
                 android:gravity="right"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="@dimen/app_margin"
-                android:layout_marginTop="@dimen/app_margin"
+                android:layout_marginTop="5dp"
                 android:layout_marginLeft="@dimen/app_margin"
                 android:lines="3"
                 android:ellipsize="end"
-                android:text="descdescdescdescdescd"
+                android:textColor="@color/blackOpacity"
                 />
 
         </LinearLayout>

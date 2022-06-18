@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/blue">
+
+        <TextView
+            android:id="@+id/lblHome"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center|right"
+            android:textColor="@color/white"
+            android:text="@string/home"
+            android:paddingLeft="@dimen/app_margin"
+            android:paddingRight="@dimen/app_margin"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:alpha="0.5"
+            />
+
+        <TextView
+            android:id="@+id/lblNews"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center|right"
+            android:textColor="@color/white"
+            android:text="@string/News"
+            android:paddingLeft="@dimen/app_margin"
+            android:paddingRight="@dimen/app_margin"
+            />
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:alpha="0.5"
+            />
+
+        <TextView
+            android:id="@+id/lblActivities"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center|right"
+            android:textColor="@color/white"
+            android:text="@string/events"
+            android:paddingLeft="@dimen/app_margin"
+            android:paddingRight="@dimen/app_margin"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:alpha="0.5"
+            />
+        <TextView
+            android:id="@+id/lblFees"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center|right"
+            android:textColor="@color/white"
+            android:text="@string/Bills"
+            android:paddingLeft="@dimen/app_margin"
+            android:paddingRight="@dimen/app_margin"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:alpha="0.5"
+            />
+
+        <TextView
+            android:id="@+id/lblLocation"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center|right"
+            android:textColor="@color/white"
+            android:text="@string/Locations"
+            android:paddingLeft="@dimen/app_margin"
+            android:paddingRight="@dimen/app_margin"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:alpha="0.5"
+            />
+        <TextView
+            android:id="@+id/lblAboutus"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center|right"
+            android:textColor="@color/white"
+            android:text="@string/About"
+            android:paddingLeft="@dimen/app_margin"
+            android:paddingRight="@dimen/app_margin"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:alpha="0.5"
+            />
+
+        <TextView
+            android:id="@+id/lblDeaths"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center|right"
+            android:textColor="@color/white"
+            android:text="@string/Deaths"
+            android:paddingLeft="@dimen/app_margin"
+            android:paddingRight="@dimen/app_margin"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
